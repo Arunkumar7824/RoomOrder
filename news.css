@@ -1,0 +1,495 @@
+/* news page Style css */
+/* contacts page Style css */
+
+/*navigation and half background home page, covered the image*/
+
+
+/*navication and styling */
+.nav-links{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 0px;
+}
+li{
+  list-style-type: none;
+  display: inline-block;
+}
+  
+  /* Google font family */
+  .span1{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.logo{
+  width: 400px;
+}   
+.nav-links{
+  width: auto;
+  justify-content: center;
+  gap: 1.6%;
+}   
+.li1{
+  padding-top:0px;
+  padding-right: 130px;
+}
+.roomOrder_img{
+  width: 70px;
+  height: 45px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: -11px;
+}
+.li2{
+  padding-top:25px;
+  font-size: 14px;
+}
+.li3{
+  padding-top:25px;
+  font-size: 14px;
+}
+.li4{
+  padding-top:25px;
+  font-size: 14px;
+}
+.li5{
+  padding-top:25px;
+  font-size: 14px;
+}
+.li6{
+  padding-top:25px;
+  font-size: 14px;
+}
+.li7{
+  padding-top:25px;
+  font-size: 14px;
+}
+.li8{    
+  display: none;
+}
+.li9{
+  margin-right: 2%;
+}
+
+
+#a1{
+  text-decoration: none;
+  color: white;
+}
+#a2{
+  text-decoration: none;
+  color: white;
+}
+#a3{
+  text-decoration: none;
+  color:white;
+}
+#a4{
+  text-decoration: none;
+  color: white;
+}
+#a5{
+  text-decoration: none;
+  color: khaki;
+  text-shadow: 1px 1px 2px black;
+}
+#a6{
+  text-decoration: none;
+  color: white;
+}
+#a7{
+  text-decoration: none;
+  color: white;
+}
+#a8{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+#a9{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+#a9:hover{
+  color:khaki;
+  text-shadow: 1px 1px 2px black;
+}
+  
+#a2:hover{
+  color: khaki;
+  text-shadow: 1px 1px 2px black;
+  transition:1s;
+}
+#a3:hover{
+  color: khaki;
+  text-shadow: 1px 1px 2px black;
+  transition: 1s;
+}  
+#a4:hover{
+  color: khaki;
+  text-shadow: 1px 1px 2px black;
+  transition:1s;
+}
+#a5:hover{
+  color: khaki;
+  text-shadow: 1px 1px 2px black;
+  transition:1s;
+}
+#a6:hover{
+  color: khaki;
+  text-shadow: 1px 1px 2px black;
+  transition:1s;
+}
+ 
+/* content in the center */
+.contact h1{
+  text-align: center;
+  font-size: 70px;
+  margin-top: 150px;
+  padding-bottom: 100px;
+  color:white;
+  text-shadow: 2px 2px 3px black;
+}
+.content h3{
+  font-size: 40px;
+  color: darkslategray;
+}
+.content h1{
+  font-size: 70px;
+  font-family: "dancing script";
+  color: brown;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+.content{
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+
+
+/*------------------------------------------------------------------------------------- */
+
+  /* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;    /* = ======================= note that seee here ====================== =*/
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger .line {
+  background:white;
+  box-shadow: 1px 1px 2px black;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -18px;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .logo{
+    width: auto;
+    margin-left: 3%;
+  } 
+  .li8{    
+    border: 2px solid black;
+    display: contents;
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+  .li9{    
+    border: 2px solid black;
+    display: none;
+  }
+  .nav-links.active {
+    max-height: 650px; /* Adjust as needed */
+
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+      .div6 {
+        width: 100%;
+        float: right;
+        color: white;  
+        background-color: black;
+        float: right;
+        justify-content: right;
+        text-align: right;
+        padding: 10px 0;
+        margin-top: 50px;
+        }
+}
+
+/*navigation and half background home page, covered the image*/
+.img{
+  background-image: url(https://img.freepik.com/premium-photo/chef-meticulously-chops-fresh-vegetables-wooden-cutting-board-highlighting-essence-culi_871349-83442.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* news title is center in the page */
+.news h1{
+  text-align: center;
+  font-size: 70px;
+  margin-top: 150px;
+  padding-bottom: 100px;
+  color:white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.heading h1{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -40px;
+  color: darkslategrey;
+  width: 90%;
+}
+
+.parent-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:70px;
+  padding: 0 ;
+  width: 100%;
+  justify-content: center;
+
+}
+/* Responsive Polaroid Images / Cards */
+.parent-content .child-content1 {
+  width: 730px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 50px 0px 10px black;
+
+  text-align: center;
+  justify-content: center;
+
+ 
+}
+
+.parent-content .child-content1 .content1{
+  border: 1px solid rgba(128, 128, 128, 0.192);
+  border-radius: 20px;
+  width: 270px;
+  height: auto;
+  margin: 15px;
+  padding: 20px 30px;
+}
+.parent-content .child-content1 .button button{
+  font-size: 18px;
+  font-weight: normal;
+  padding: 7px 35px 7px 35px ;
+  background-color: darkslategray;
+  color: white;
+  border: 1px solid darkslategray;
+  border-radius: 10px;
+
+ margin:15% 0;
+}
+.parent-content .child-content1 .button button:hover{
+  color: darkslategray;
+  background-color: transparent;
+  transition: 0.6s;
+}
+.parent-content .child-content1 .content1:hover{
+  box-shadow: 0px 0px 6px 5px rgba(128, 128, 128, 0.281);
+}
+.parent-content .child-content1 .content2{
+  border: 1px solid rgba(128, 128, 128, 0.192);
+  border-radius: 20px;
+  width: 270px;
+  height: auto;
+   margin: 15px;
+  padding: 20px 30px;   
+  
+}
+.parent-content .child-content1 .content2:hover{
+  box-shadow: 0px 0px 6px 5px rgba(128, 128, 128, 0.281);
+}
+
+.parent-content .child-content2{
+  margin: 0 25px;
+}
+.parent-content .child-content2 .content1{
+  width: 340px;
+  height: auto;
+}
+.parent-content .child-content2 .content1 h1{
+  font-size: 50px;
+  color: darkslategrey;
+  font-weight: normal;  
+}
+.parent-content .child-content2 .content1 p{
+  font-size: 20px;
+  color: gray;
+  font-weight: normal; 
+  text-align: justify; 
+}
+.parent-content .child-content2 .content1 p span{
+  font-size: 20px;
+  color: darkslategray;
+  font-weight: bold;  
+}
+.parent-content .child-content2 .content2 input{
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+  color: darkslategray;
+  width: 80%;
+  padding: 9px 20px ;
+  font-weight: normal;  
+  border: 1px solid transparent;
+  background-color:  rgba(128, 128, 128, 0.199);
+  border-radius: 7px;
+}
+
+/* clicked the input, dose change */ 
+.parent-content .child-content2 .content2 input:focus{
+  outline: transparent;
+}
+
+.parent-content .child-content2 .content2 button{
+  font-size: 13px;
+  padding: 15px 10px 15px 10px ;
+  margin: 15px 15px 15px 0px;
+  color: white;
+  background-color:darkslategray ;
+  border: 1px solid darkslategray;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.parent-content .child-content2 .content2 button:hover{
+  color: darkslategray;
+  background-color: transparent;
+  transition: 0.6s;
+}
+
+
+
+.parent-content .child-content1 h5{
+  font-weight: bold;
+  font-size: 16px;
+  color: gray;
+}
+.parent-content .child-content1 h2{
+  text-decoration:none;
+  font-weight: normal;
+  font-size: 28px;
+  color: black;
+}
+.parent-content .child-content1 p{
+  font-weight: bold;
+  font-size: 18px;
+  color: gray;
+}
+.parent-content .child-content1 h4{
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 26px;
+  color:darkslategrey;
+}
+.parent-content .child-content1 .content1 img{
+  border-radius: 20px;
+  width: 270px;
+  height: 220px;
+}
+.parent-content .child-content1 .content2 img{
+  border-radius: 20px;
+  width: 270px;
+  height: 220px;
+}
+
+/* last one line with black background */
+.div6 {
+  width: 100%;
+  float: right;
+  color: white;  
+  background-color: black;
+  float: right;
+  justify-content: right;
+  text-align: right;
+  padding: 10px 0;
+  margin-top: 50px;
+  }
+
+
+
